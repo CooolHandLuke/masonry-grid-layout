@@ -2,21 +2,51 @@
 
 const posts = []
 
-const images = [
-    'https://dr.savee-cdn.com/things/6/1/947fc7825d592e073f3906.jpg',
-    'https://dr.savee-cdn.com/things/6/0/ddba20ea875e5eba5e8856.jpg',
-    'https://dr.savee-cdn.com/things/5/e/68f35e1404e45961765299.gif',
-    'https://dr.savee-cdn.com/things/6/1/83d88d67b030d9aef082f8.jpg',
-    'https://dr.savee-cdn.com/things/6/1/80259167b030d9aef046f9.jpg',
-    'https://dr.savee-cdn.com/things/5/f/de5cc54d5cb418bb2bcaea.png',
-    'https://dr.savee-cdn.com/things/6/1/6c578f1ff504a6334769b4.jpg',
-    'https://dr.savee-cdn.com/things/6/1/76ebbcfd9b0f8e00cf35d8.jpg',
-    'https://dr.savee-cdn.com/things/6/1/64711b0e69492ef09b7fd0.jpg'
+const shoots = [
+    '/shoot1/Look_1.jpg',
+    '/shoot1/Look_2.jpg',
+    '/shoot2/Look_1.jpg',
+    '/shoot2/Look_2.jpg',
+    '/shoot2/Look_3.jpg',
+    '/shoot2/Look_4.jpg',
+    '/shoot2/Look_5.jpg',
+    '/shoot2/Look_6.jpg',
+    '/shoot2/Look_7.jpg',
+    '/shoot3/00 VG COVER MARZO LATAM Kali Uchis (1).jpg',
+    '/shoot4/Luke_GQ2_001_v2ext_CMYK.jpg',
+    '/shoot4/Luke_GQ2_002_v1_CMYK.jpg',
+    '/shoot4/Luke_GQ2_008v2_v2_CMYK.jpg',
+    '/shoot4/Luke_GQ2_003_v2_CMYK.jpg',
+    '/shoot4/Luke_GQ2_009v3_v2_CMYK.jpg',
+    '/shoot4/GQDECJANSOCIALCOVER_ANDREW.jpg',
+    '/shoot4/Luke_GQ2_011_v1_CMYK.jpg',
+    '/shoot4/Luke_GQ2_012_v1_CMYK.jpg',
+    '/shoot5/Basketball-1.png',
+    '/shoot5/Commuter-3.png',
+    '/shoot5/Dad-1.png',
+    '/shoot5/Dad-3.png',
+    '/shoot5/FlowerShop-2.png',
+    '/shoot5/Skateboarder-1.png',
+    '/shoot5/Swimmer-3.png',
+    '/shoot6/LOOK_01_0229.jpg',
+    '/shoot6/LOOK_02_0408.jpg',
+    '/shoot6/LOOK_05_0961-4.jpg',
+    '/shoot6/LOOK_06_1483.jpg',
+    '/shoot6/ELM050123FOBCOVER_MEGAN_DIGITAL2.jpg',
+    '/shoot7/Silk_Ella_Bullnose_PlanetHollywood.jpg',
+    '/shoot7/Silk_Nextmilk_Brooklyn_SINGLE.jpg',
+    '/shoot7/Silk_Nextmilk_Oneals_SINGLE.jpg',
+    '/shoot8/Look_1.jpg',
+    '/shoot8/Look_2.jpg',
+    '/shoot8/Look_3.jpg',
+    '/shoot8/Look_4.jpg',
 ]
+
+const images = shoots.sort((a, b) => 0.5 - Math.random());
 
 let imageIndex = 0;
 
-for(let i = 1; i <= 80; i++){
+for (let i = 1; i <= images.length - 1; i++) {
     let item = {
         id: i,
         title: `Post ${i}`,
